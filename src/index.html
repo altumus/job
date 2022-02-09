@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Тестовое задание</title>
+
+        <!-- styles -->
+        <link href="css/style.min.css" rel="stylesheet">
+    </head>
+    <body>
+        @@include('html/menu.html')
+        @@include('html/prebody.html')
+        <div class="main-container">
+            <div class="h1">
+                <h1>Ещё больше возможностей</h1>
+            </div>
+            
+            <div class="h2">
+                <h2>Новый дизайн</h2>
+            </div>
+
+        @@include('html/items-container.html')
+
+            <div class="h2">
+                <h2>Сканер отпечатка в экране</h2>
+            </div>
+
+        @@include('html/scan.html')
+
+            <div>
+                <div class="h2">
+                    <h2>Аксессуары</h2>
+                </div>
+        
+                @@include('html/acs.html')
+                
+            </div>
+            
+            <div>
+                <div class="h2">
+                    <h2>Приложения и сервисы Samsung</h2>
+                </div>
+                
+                @@include('html/apps.html')
+            </div>
+            
+        </div>
+        <script src="js/app.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,350 @@
+@import "fonts";
+@import "restore";
+
+body{
+    font-family: 'PTRootUI';
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo, .menu, .title-pc, .title-mb{
+    display: flex;
+    align-items: center;
+}
+
+.log-title-container{
+    display: flex;
+}
+
+.title-pc, .title-mb{
+    text-align: left;
+    font-size: 14px;
+}
+
+.title-mb{
+    background-color:#F9F9F9;
+    padding: 5px 15px;
+    font-size: 10px;
+    line-height: 14px;
+    display: none;
+}
+
+.main-container{
+    margin: 40px 25px 40px 25px;
+}
+
+.logo{
+    border-bottom: 3px solid #D70E2A;
+}
+
+a{
+    text-decoration: none;
+    padding: 15px 25px 10px 25px;
+}
+
+.h1{
+    font-family: 'PTRootUI';
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 50px;
+    border-bottom: 1px solid gray ;
+}
+
+.h2{
+    font-size: 30px;
+    line-height: 40px;
+    font-family: 'PTRootUI';
+    font-weight: 700;
+}
+
+.items-container{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    padding-bottom: 102px;
+    .item{
+        margin-left: 20px;
+        width: 33%;
+        border-radius: 5px;
+        .img{
+            display: flex;
+            justify-content: center;
+        }
+        .img1{
+            margin: 20px;
+        }
+        .img2{
+            padding-bottom: 25px;
+            margin-bottom: 20px;
+        }
+        .img3, .img4{
+            margin-bottom: 20px;
+        }
+
+
+        article, .ar1{
+            font-size: 16px;
+            font-family: 'PTRootUI';
+            line-height: 30px;
+            font-weight: 500;
+        }
+
+        .ar1{
+            padding: 15px 15px 24px;
+            color: white;
+            font-size: 14px;
+        }
+    }
+    .item1{
+        margin-left: 0px;
+        height: 50%;
+        background-color: #171717;
+    }
+    .item2{
+       min-height: 50%;
+    }
+    .item3, .item4{
+        width: 50%;
+        min-height: 50%;
+    }
+
+    .items3-4{
+        width: 33%;
+        display: flex;
+    }
+
+    .item5{
+        margin-left: 0;
+        background-color: white;
+        .ar1{
+            color: black;
+        }
+    }
+
+    .pre1, .pre2{
+        border-top: 1px solid gray;
+    }
+
+    .last{
+        order: 6;
+    }
+    
+}
+
+
+
+.scan-cont{
+    display: flex;
+    justify-content: space-between;
+    .point{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .point-img{
+        width: 60px;
+        height: 60px;
+    }
+
+    article{
+        width: 40%;
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 20px;
+    }
+
+    .img-ph{
+        width: 50%;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .points{
+        width: 50%;
+    }
+}
+
+.apps{
+    flex-wrap: wrap;
+    display: flex;
+    .ico{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .text{
+        display: flex;
+        justify-content: center;
+    }
+
+    .app, .app-btm{
+        width: 33%;
+        img{
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    .app-btm{
+        margin-top: 75px;
+    }
+
+    article{
+        font-size: 24px;
+        line-height: 24px;
+        margin:0px 10px;
+    }
+}
+
+/* adaptive */
+
+@media (min-width: 1680px){
+    .items-container .item .ar1, .items-container .item article{
+        font-size: 24px;
+        font-family: 'PTRootUI';
+        line-height: 30px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 1000px){
+    .items-container{
+        flex-wrap: wrap;
+        .item{
+            width: 50%;
+            margin-bottom: 50px;
+            .item2{
+                width: 45%;
+            }
+        }
+        .items3-4{
+            width: 100%;
+        }
+    }
+
+
+    .scan-cont .img-ph{
+        background-size: contain;
+        background-position: top;
+    }
+
+    .apps article{
+        font-size: 16px;
+    }
+
+   h1{
+        font-size: 38px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 720px){
+
+    .h1{
+        font-size: 30px;
+    }
+
+    .h2{
+        font-size: 22px;
+    }
+
+    .apps article{
+        font-size: 16px;
+    }
+
+    .title-pc{
+        display: none;
+    }
+
+    .title-mb{
+        display: flex;
+    }
+
+    .items-container{
+        flex-wrap: wrap;
+    }
+
+    .items3-4{
+        order: 2;
+    }
+    .items-container .items3-4{
+        width: 100%;
+    }
+
+    .items-container{
+        .item1, .item2, .item5{
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        .item1{
+            order: 1;
+        }
+
+        .item2{
+            order: 3;
+        }
+
+        .item3, .item4{
+            order: 2;
+        }
+    }
+
+    .scan-cont{
+        display: block;
+        .point-img{
+            margin: auto;
+        }
+        img{
+            display: flex;
+            padding: 30px;
+        }
+        .img-ph{
+            background-size: contain;
+            width: 100%;
+            height: 190px;
+        }
+        article{
+            width: 100%;
+            padding: 0;
+        }
+        .points{
+            width: 100%;
+        }
+        .point{
+            display: block;
+        }
+    }
+
+    .apps{
+        flex-direction: column;
+        article{
+            width: 80%;
+            display: flex;
+        }
+        .app, .app-btm{
+            display: flex;
+            border-bottom: 1px solid gray;
+            width: 100%;
+            padding: 20px 0px;
+            margin-top: 0;
+        }
+
+        .ico{
+            align-items: center;
+        }
+
+        .reverse{
+            flex-direction: row-reverse;
+        }
+    }
+}
